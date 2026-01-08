@@ -2,14 +2,24 @@
    box-sizing: border-box;
    padding: 0;
    margin: 0;
+
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+h1 {
+   font-size: clamp(2.5rem, 8vw, 3.5rem);
+}
+
+h2 {
+   font-weight: 100;
+   font-size: clamp(1.6rem, 6vw, 2rem);
 }
 
 header {
    display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
 
    padding: 5vw;
 
@@ -50,17 +60,73 @@ header::before {
    color: white;
 }
 
-h1 {
-   font-size: clamp(2.5rem, 8vw, 3.5rem);
-}
-
 header > p {
    font-size: clamp(1.75rem, 6vw, 2.5rem);
    color: gray;
    margin-bottom: 3vw;
 }
 
-.header-buttons img {
+img {
    width: 8vw;
    height: auto;
 }
+
+.personal-projects {
+   margin: 15vh 0 15vh 0;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.project-card {
+   margin: 5vw;
+
+   width: 85vw;
+   height: auto;
+}
+
+.card-header {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.project-info {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+
+   padding: 2vw;
+   box-shadow: 0 0 1rem gray;
+   clip-path: inset(0px -1rem -1rem -1rem);
+}
+
+.project-info > p {
+   width: 100%;
+   min-height: 15vh;
+   padding: 3vw;
+
+   text-align: left;
+   font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+.project-card picture img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+/**
+
+TODO
+
+Content
+   My project cards
+   footer
+
+Styling
+   Button styling/responsiveness
+   Updating layout based on screen size
+
+**/
