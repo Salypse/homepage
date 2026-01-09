@@ -5,7 +5,6 @@
 
    align-items: center;
    justify-content: center;
-   text-align: center;
 }
 
 h1 {
@@ -117,13 +116,52 @@ img {
    display: block;
 }
 
+footer {
+   background-color: deepskyblue;
+   color: white;
+}
+
+footer h1 {
+   font-size: clamp(3rem, 8vw, 5rem);
+   text-align: center;
+   padding: 5vw;
+}
+
+footer h2 {
+   padding: 3vw;
+}
+
+.address,
+.contact-info {
+   text-align: left;
+   font-size: clamp(1.3rem, 5vw, 2rem);
+
+   padding: 3vw;
+}
+
+.footer-buttons {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin: 5vw;
+   gap: 5vw;
+}
+
+.footer-buttons img {
+   width: 10vw;
+   height: auto;
+}
+
+.footer-image {
+   width: 100vw;
+   height: auto;
+   display: block;
+}
+
 /**
 
 TODO
-
-Content
-   My project cards
-   footer
 
 Styling
    Button styling/responsiveness
