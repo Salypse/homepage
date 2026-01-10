@@ -48,23 +48,31 @@ header::before {
    height: auto;
 }
 
+.header-links a {
+   margin: 0 2vw 0 2vw;
+}
+
 .header-caption {
-   position: absolute;
-   bottom: 3vw;
-   left: 3vw;
+   position: relative;
+   top: -15vw;
 
    text-align: left;
-   font-size: clamp(3rem, 10vw, 4rem);
+   font-size: clamp(2.6rem, 8vw, 3.5rem);
    font-weight: 700;
    color: white;
 }
 
-header > p {
+.about-me > p {
    font-size: clamp(1.75rem, 6vw, 2.5rem);
    color: gray;
    margin-bottom: 3vw;
 }
 
+.about-me {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
 img {
    width: 8vw;
    height: auto;
@@ -159,11 +167,54 @@ footer h2 {
    display: block;
 }
 
+@media (min-width: 600px) {
+   h1 {
+      font-size: clamp(2rem, 6vw, 2.5rem);
+   }
+
+   .about-me {
+      display: block;
+      background-color: white;
+      box-shadow: 0 0 1rem gray;
+
+      width: 85vw;
+      padding: 2vw;
+      margin-top: 5vw;
+      position: relative;
+   }
+
+   .about-me p {
+      text-align: left;
+      font-size: clamp(1.5rem, 5vw, 1.8rem);
+   }
+
+   .header-image {
+      width: 55vw;
+      height: auto;
+      float: left;
+
+      margin: -8vw 1vw -1vw -5vw;
+   }
+
+   .header-caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      font-size: clamp(2.5rem, 6vw, 3rem);
+   }
+
+   .header-links img {
+      width: 4vw;
+   }
+}
+
 /**
 
 TODO
 
 Styling
+   Font
    Button styling/responsiveness
    Updating layout based on screen size
 
