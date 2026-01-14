@@ -2,9 +2,6 @@
    box-sizing: border-box;
    padding: 0;
    margin: 0;
-
-   align-items: center;
-   justify-content: center;
 }
 
 h1 {
@@ -79,25 +76,31 @@ img {
 }
 
 .personal-projects {
-   margin: 15vh 0 15vh 0;
+   margin: 15vh auto 15vh auto;
 
+   width: 85vw;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 
-.project-card {
-   margin: 5vw;
+.cards-wrapper {
+   margin-top: 2vh;
+   display: grid;
+   gap: 5vw;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
 
-   width: 85vw;
-   height: auto;
+.project-card {
+   width: 100%;
+   height: 100%;
 }
 
 .card-header {
    width: 100%;
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: space-between;
 }
 
 .project-info {
@@ -111,13 +114,17 @@ img {
 }
 
 .project-info > p {
-   width: 100%;
    min-height: 15vh;
    padding: 3vw;
 
    text-align: left;
    font-size: clamp(1.2rem, 4vw, 1.6rem);
 }
+
+.project-buttons a {
+   margin: 0.5vw;
+}
+
 .project-card > img {
    width: 100%;
    height: auto;
@@ -207,6 +214,18 @@ footer h2 {
    .header-links img {
       width: 4vw;
       margin: 0 1vw 0 1vw;
+   }
+
+   .personal-projects {
+      margin-top: 5vh;
+   }
+
+   .personal-projects h1 {
+      align-self: flex-start;
+   }
+
+   .project-card a > img {
+      width: 4vw;
    }
 }
 
