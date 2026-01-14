@@ -169,7 +169,7 @@ footer h2 {
 }
 
 .footer-image {
-   width: 100vw;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -226,6 +226,52 @@ footer h2 {
 
    .project-card a > img {
       width: 4vw;
+   }
+
+   footer {
+      display: flex;
+   }
+
+   .contact-me {
+      width: 60%;
+      margin: 10vw 5vw 10vw 5vw;
+   }
+
+   footer h1 {
+      font-size: clamp(2rem, 6vw, 2.5rem);
+      text-align: left;
+
+      padding: 2vw;
+   }
+
+   footer h2 {
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      padding: 0 2vw 2vw 3vw;
+   }
+
+   .address,
+   .contact-info {
+      font-size: clamp(1.2rem, 4vw, 1.6rem);
+      padding: 1vw 2vw 2vw 3vw;
+   }
+
+   .footer-buttons {
+      width: auto;
+
+      justify-content: flex-start;
+      margin: 0;
+      padding: 2vw 2vw 2vw 3vw;
+   }
+
+   .footer-buttons img {
+      width: 5vw;
+   }
+
+   footer picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2vw;
    }
 }
 
