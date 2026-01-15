@@ -275,6 +275,46 @@ footer h2 {
    }
 }
 
+@media (min-width: 1200px) {
+   .contact-me {
+      margin: 0;
+      width: 40%;
+   }
+
+   footer h1 {
+      font-size: clamp(2rem, 6vw, 2.4rem);
+   }
+
+   footer h2 {
+      font-size: clamp(1.8rem, 6vw, 2rem);
+      padding: 0 0 0 3vw;
+   }
+
+   .address,
+   .contact-info {
+      font-size: clamp(1.2rem, 4vw, 1.6rem);
+      padding: 2vw 0 0 3vw;
+   }
+
+   .footer-buttons {
+      gap: 1.5vw;
+   }
+
+   .footer-buttons img {
+      width: 2.2vw;
+   }
+
+   footer picture {
+      width: 60%;
+      margin: 1vw;
+   }
+
+   .footer-image {
+      width: 75%;
+      max-height: 90%;
+   }
+}
+
 /**
 
 TODO
