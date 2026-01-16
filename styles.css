@@ -277,13 +277,58 @@ footer h2 {
 }
 
 @media (min-width: 1200px) {
+   h1 {
+      font-size: clamp(1.8rem, 6vw, 2.3rem);
+   }
+
+   header::before {
+      height: 85%;
+   }
+
+   .header-image {
+      width: 40vw;
+      margin: -2vw 1vw 0 -5vw;
+   }
+
+   .header-caption {
+      font-size: clamp(2.5rem, 8vw, 2.8rem);
+   }
+
+   .about-me {
+      margin-top: 2vw;
+      padding: 1vw;
+      height: 25vw;
+   }
+   .about-me p {
+      font-size: clamp(1.4rem, 5vw, 1.6vw);
+      margin-bottom: 1vw;
+   }
+
+   .about-me h1 {
+      text-align: left;
+   }
+
+   .header-links {
+      display: flex;
+      align-self: flex-end;
+      justify-content: flex-end;
+   }
+
+   .header-links a {
+      margin: 0;
+   }
+
+   .header-links a img {
+      width: 3vw;
+   }
+
    .personal-projects {
       margin: 3vh auto 10vh auto;
       width: 95%;
    }
 
    .cards-wrapper {
-      gap: 3vw;
+      gap: 2vw;
       width: 90%;
    }
 
