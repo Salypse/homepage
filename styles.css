@@ -1,3 +1,15 @@
+@font-face {
+   font-family: "Garamond";
+   src: url("./assets/fonts/EB_Garamond/static/EBGaramond-Regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+   font-family: "Roboto";
+   src: url("./assets/fonts/Roboto_Condensed/static/RobotoCondensed-Regular.ttf")
+      format("truetype");
+}
+
 * {
    box-sizing: border-box;
    padding: 0;
@@ -6,11 +18,13 @@
 
 h1 {
    font-size: clamp(2.5rem, 8vw, 3.5rem);
+   font-family: Garamond, sans-serif;
 }
 
 h2 {
    font-weight: 100;
    font-size: clamp(1.6rem, 6vw, 2rem);
+   font-family: Garamond, sans-serif;
 }
 
 header {
@@ -54,6 +68,7 @@ header::before {
    top: -15vw;
 
    text-align: left;
+   font-family: Garamond, sans-serif;
    font-size: clamp(2.6rem, 8vw, 3.5rem);
    font-weight: 700;
    color: white;
@@ -61,6 +76,7 @@ header::before {
 
 .about-me > p {
    font-size: clamp(1.75rem, 6vw, 2.5rem);
+   font-family: "Roboto", sans-serif;
    color: gray;
    margin-bottom: 3vw;
 }
@@ -119,6 +135,7 @@ img {
    padding: 3vw;
 
    text-align: left;
+   font-family: "Roboto", sans-serif;
    font-size: clamp(1.2rem, 4vw, 1.6rem);
 }
 
@@ -139,6 +156,7 @@ footer {
 
 footer h1 {
    font-size: clamp(3rem, 8vw, 5rem);
+   font-family: Garamond, sans-serif;
    text-align: center;
    padding: 5vw;
 }
@@ -151,6 +169,7 @@ footer h2 {
 .contact-info {
    text-align: left;
    font-size: clamp(1.3rem, 5vw, 2rem);
+   font-family: "Roboto", sans-serif;
 
    padding: 3vw;
 }
