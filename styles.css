@@ -63,10 +63,11 @@ header::before {
    margin: 0 2vw 0 2vw;
 }
 
-.header-links a img {
+.header-links img {
+   width: 8vw;
    transition: transform 0.4s;
 }
-.header-links a img:hover {
+.header-links img:hover {
    transform: scale(1.2);
 }
 
@@ -78,13 +79,13 @@ header::before {
    font-family: Garamond, sans-serif;
    font-size: clamp(2.6rem, 8vw, 3.5rem);
    font-weight: 700;
-   color: white;
+   color: black;
 }
 
-.about-me > p {
+.about-me-caption {
    font-size: clamp(1.75rem, 6vw, 2.5rem);
    font-family: "Roboto", sans-serif;
-   color: gray;
+   color: black;
    margin-bottom: 3vw;
 }
 
@@ -166,7 +167,7 @@ img {
 
 footer {
    background-color: deepskyblue;
-   color: white;
+   color: black;
 }
 
 footer h1 {
@@ -176,8 +177,9 @@ footer h1 {
    padding: 5vw;
 }
 
-footer h2 {
-   padding: 3vw;
+.footer-caption {
+   font-size: clamp(1.6rem, 6vw, 2rem);
+   font-family: Garamond, sans-serif;
 }
 
 .address,
@@ -230,7 +232,7 @@ footer h2 {
       position: relative;
    }
 
-   .about-me p {
+   .about-me-caption {
       text-align: left;
       font-size: clamp(1.5rem, 5vw, 1.8rem);
    }
@@ -284,7 +286,7 @@ footer h2 {
       padding: 2vw;
    }
 
-   footer h2 {
+   .footer-caption {
       font-size: clamp(1.5rem, 5vw, 2rem);
       padding: 0 2vw 2vw 3vw;
    }
@@ -338,7 +340,7 @@ footer h2 {
       padding: 1vw;
       height: 25vw;
    }
-   .about-me p {
+   .about-me-caption {
       font-size: clamp(1.4rem, 5vw, 1.6vw);
       margin-bottom: 1vw;
    }
@@ -395,7 +397,7 @@ footer h2 {
       font-size: clamp(2rem, 6vw, 2.4rem);
    }
 
-   footer h2 {
+   .footer-caption {
       font-size: clamp(1.8rem, 6vw, 2rem);
       padding: 0 0 0 3vw;
    }

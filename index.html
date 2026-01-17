@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
@@ -18,12 +18,12 @@
                   <img
                      src="./assets/img/header-moutain.jpg"
                      class="header-image"
-                     alt="Group of people looking towards a mountain"
+                     alt=""
                   />
                </picture>
-               <h1 class="header-caption">Mike Bobaguard</h1>
+               <p class="header-caption">Mike Bobaguard</p>
                <h1>About Me</h1>
-               <p>
+               <p class="about-me-caption">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptatibus tempore expedita ipsum itaque repudiandae illo ex
                   distinctio sapiente pariatur neque consectetur deleniti
@@ -31,14 +31,26 @@
                   explicabo?
                </p>
                <div class="header-links">
-                  <a href="https://github.com/" target="_blank">
-                     <img src="./assets/icons/github.svg" />
+                  <a
+                     href="https://github.com/"
+                     target="_blank"
+                     aria-label="Github account (opens in a new tab)"
+                  >
+                     <img src="./assets/icons/github.svg" alt="" />
                   </a>
-                  <a href="https://www.linkedin.com/" target="_blank">
-                     <img src="./assets/icons/linked-in.svg" />
+                  <a
+                     href="https://www.linkedin.com/"
+                     target="_blank"
+                     aria-label="Linked in account (opens in a new tab)"
+                  >
+                     <img src="./assets/icons/linked-in.svg" alt="" />
                   </a>
-                  <a href="https://x.com/" target="_blank">
-                     <img src="./assets/icons/twitter.svg" />
+                  <a
+                     href="https://x.com/"
+                     target="_blank"
+                     aria-label="Twitter account (opens in a new tab)"
+                  >
+                     <img src="./assets/icons/twitter.svg" alt="" />
                   </a>
                </div>
             </div>
@@ -66,19 +78,18 @@
                            <a
                               href="https://github.com/Salypse/battleship"
                               target="_blank"
+                              aria-label="Battleship github source code (opens in a new tab)"
                            >
-                              <img
-                                 src="./assets/icons/github.svg"
-                                 alt="Github Code Link"
-                              />
+                              <img src="./assets/icons/github.svg" alt="" />
                            </a>
                            <a
                               href="https://salypse.github.io/battleship/"
                               target="_blank"
+                              aria-label="Battleship live demo (opens in a new tab)"
                            >
                               <img
                                  src="./assets/icons/external-link.svg"
-                                 alt="Project Link"
+                                 alt=""
                               />
                            </a>
                         </div>
@@ -109,19 +120,18 @@
                            <a
                               href="https://github.com/Salypse/todo-list"
                               target="_blank"
+                              aria-label="Todo list github source code (opens in a new tab)"
                            >
-                              <img
-                                 src="./assets/icons/github.svg"
-                                 alt="Github Code Link"
-                              />
+                              <img src="./assets/icons/github.svg" alt="" />
                            </a>
                            <a
                               href="https://salypse.github.io/todo-list/"
                               target="_blank"
+                              aria-label="Todo list live demo (opens in a new tab)"
                            >
                               <img
                                  src="./assets/icons/external-link.svg"
-                                 alt="Project Link"
+                                 alt=""
                               />
                            </a>
                         </div>
@@ -151,19 +161,18 @@
                            <a
                               href="https://github.com/Salypse/weather-app"
                               target="_blank"
+                              aria-label="Weather app github source code (opens in a new tab)"
                            >
-                              <img
-                                 src="./assets/icons/github.svg"
-                                 alt="Github Code Link"
-                              />
+                              <img src="./assets/icons/github.svg" alt="" />
                            </a>
                            <a
                               href="https://salypse.github.io/weather-app/"
                               target="_blank"
+                              aria-label="Weather app live demo (opens in a new tab)"
                            >
                               <img
                                  src="./assets/icons/external-link.svg"
-                                 alt="Project Link"
+                                 alt=""
                               />
                            </a>
                         </div>
@@ -190,19 +199,18 @@
                            <a
                               href="https://github.com/Salypse/tic-tac-toe"
                               target="_blank"
+                              aria-label="Tic tac toe github source code (opens in a new tab)"
                            >
-                              <img
-                                 src="./assets/icons/github.svg"
-                                 alt="Github Code Link"
-                              />
+                              <img src="./assets/icons/github.svg" alt="" />
                            </a>
                            <a
-                              href="https://salypse.github.io/weather-app/"
+                              href="https://salypse.github.io/tic-tac-toe/"
                               target="_blank"
+                              aria-label="Tic tac toe live demo (opens in a new tab)"
                            >
                               <img
                                  src="./assets/icons/external-link.svg"
-                                 alt="Project Link"
+                                 alt=""
                               />
                            </a>
                         </div>
@@ -212,7 +220,7 @@
                </div>
 
                <!-- Blank Project 1-->
-               <div class="project-card">
+               <div class="project-card" aria-hidden="true">
                   <img
                      srcset="
                         ./assets/img/blank-1-400w.jpg 400w,
@@ -226,11 +234,22 @@
                      <div class="card-header">
                         <h2>Blank Project 1</h2>
                         <div class="project-buttons">
-                           <a href="https://github.com/" target="_blank">
-                              <img src="./assets/icons/github.svg" />
+                           <a
+                              href="https://github.com/"
+                              target="_blank"
+                              tabindex="-1"
+                           >
+                              <img src="./assets/icons/github.svg" alt="" />
                            </a>
-                           <a href="https://github.com/" target="_blank">
-                              <img src="./assets/icons/external-link.svg" />
+                           <a
+                              href="https://github.com/"
+                              target="_blank"
+                              tabindex="-1"
+                           >
+                              <img
+                                 src="./assets/icons/external-link.svg"
+                                 alt=""
+                              />
                            </a>
                         </div>
                      </div>
@@ -239,7 +258,7 @@
                </div>
 
                <!-- Blank Project 2-->
-               <div class="project-card">
+               <div class="project-card" aria-hidden="true">
                   <img
                      srcset="
                         ./assets/img/blank-2-400w.jpg 400w,
@@ -251,13 +270,24 @@
                   />
                   <div class="project-info">
                      <div class="card-header">
-                        <h2>Blank Projet 2</h2>
+                        <h2>Blank Project 2</h2>
                         <div class="project-buttons">
-                           <a href="https://github.com/" target="_blank">
-                              <img src="./assets/icons/github.svg" />
+                           <a
+                              href="https://github.com/"
+                              target="_blank"
+                              tabindex="-1"
+                           >
+                              <img src="./assets/icons/github.svg" alt="" />
                            </a>
-                           <a href="https://github.com/" target="_blank">
-                              <img src="./assets/icons/external-link.svg" />
+                           <a
+                              href="https://github.com/"
+                              target="_blank"
+                              tabindex="-1"
+                           >
+                              <img
+                                 src="./assets/icons/external-link.svg"
+                                 alt=""
+                              />
                            </a>
                         </div>
                      </div>
@@ -270,10 +300,10 @@
          <footer>
             <div class="contact-me">
                <h1>Contact Me</h1>
-               <h2>
+               <p class="footer-caption">
                   Please get in touch if you think if you think our work could
                   be mutually beneficial!
-               </h2>
+               </p>
                <div class="address">
                   <p>742 Evergreen Terrace</p>
                   <p>Springfield, USA</p>
@@ -283,14 +313,26 @@
                   <p>totally.real.email@gmail.com</p>
                </div>
                <div class="footer-buttons">
-                  <a href="https://github.com/" target="_blank">
-                     <img src="./assets/icons/github.svg" />
+                  <a
+                     href="https://github.com/"
+                     target="_blank"
+                     aria-label="Github account (opens in a new tab)"
+                  >
+                     <img src="./assets/icons/github.svg" alt="" />
                   </a>
-                  <a href="https://www.linkedin.com/" target="_blank">
-                     <img src="./assets/icons/linked-in.svg" />
+                  <a
+                     href="https://www.linkedin.com/"
+                     target="_blank"
+                     aria-label="Linked in account (opens in a new tab)"
+                  >
+                     <img src="./assets/icons/linked-in.svg" alt="" />
                   </a>
-                  <a href="https://x.com/" target="_blank">
-                     <img src="./assets/icons/twitter.svg" />
+                  <a
+                     href="https://x.com/"
+                     target="_blank"
+                     aria-label="Twitter account (opens in a new tab)"
+                  >
+                     <img src="./assets/icons/twitter.svg" alt="" />
                   </a>
                </div>
             </div>
