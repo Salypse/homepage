@@ -18,23 +18,24 @@
 
 h1 {
    font-size: clamp(2.5rem, 8vw, 3.5rem);
-   font-family: Garamond, sans-serif;
+   font-family: "Garamond", sans-serif;
 }
 
 h2 {
    font-weight: 100;
    font-size: clamp(1.6rem, 6vw, 2rem);
-   font-family: Garamond, sans-serif;
+   font-family: "Garamond", sans-serif;
+}
+
+img {
+   height: auto;
 }
 
 header {
    display: flex;
    flex-direction: column;
-
    padding: 5vw;
-
    position: relative;
-   overflow: hidden;
 }
 
 header::before {
@@ -48,10 +49,10 @@ header::before {
    height: 40vh;
 }
 
-.header-media {
-   position: relative;
-   width: 80vw;
-   margin-bottom: 3vw;
+.about-me {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
 }
 
 .header-image {
@@ -59,19 +60,7 @@ header::before {
    height: auto;
 }
 
-.header-links a {
-   margin: 0 2vw 0 2vw;
-}
-
-.header-links img {
-   width: 8vw;
-   transition: transform 0.4s;
-}
-.header-links img:hover {
-   transform: scale(1.2);
-}
-
-.header-caption {
+.header-image-caption {
    position: relative;
    top: -15vw;
 
@@ -89,22 +78,25 @@ header::before {
    margin-bottom: 3vw;
 }
 
-.about-me {
-   display: flex;
-   flex-direction: column;
-   text-align: center;
+.about-me-links a {
+   margin: 0 3vw 0 3vw;
 }
-img {
-   height: auto;
+
+.about-me-links img {
+   width: 8vw;
+   transition: transform 0.4s;
+}
+
+.about-me-links a:hover img,
+.about-me-links a:focus-visible img {
+   transform: scale(1.2);
 }
 
 .personal-projects {
    margin: 15vh auto 15vh auto;
-
    width: 85vw;
    display: flex;
    flex-direction: column;
-   align-items: center;
 }
 
 .cards-wrapper {
@@ -116,34 +108,13 @@ img {
 
 .project-card {
    width: 100%;
-   height: 100%;
+   height: auto;
 }
 
 .card-header {
-   width: 100%;
    display: flex;
    flex-direction: row;
-   align-items: center;
    justify-content: space-between;
-}
-
-.project-info {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-
-   padding: 2vw;
-   box-shadow: 0 0 1rem gray;
-   clip-path: inset(0px -1rem -1rem -1rem);
-}
-
-.project-info > p {
-   min-height: 15vh;
-   padding: 3vw;
-
-   text-align: left;
-   font-family: "Roboto", sans-serif;
-   font-size: clamp(1.2rem, 4vw, 1.6rem);
 }
 
 .project-buttons a {
@@ -165,12 +136,30 @@ img {
    display: block;
 }
 
+.project-info {
+   display: flex;
+   flex-direction: column;
+
+   padding: 2vw;
+   box-shadow: 0 0 1rem gray;
+   clip-path: inset(0px -1rem -1rem -1rem);
+}
+
+.project-info > p {
+   min-height: 15vh;
+   padding: 3vw;
+
+   text-align: left;
+   font-family: "Roboto", sans-serif;
+   font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+
 footer {
    background-color: deepskyblue;
    color: black;
 }
 
-footer h1 {
+.contact-me h1 {
    font-size: clamp(3rem, 8vw, 5rem);
    font-family: Garamond, sans-serif;
    text-align: center;
@@ -180,24 +169,21 @@ footer h1 {
 .footer-caption {
    font-size: clamp(1.6rem, 6vw, 2rem);
    font-family: Garamond, sans-serif;
+   padding: 3vw;
 }
 
-.address,
-.contact-info {
+.contact-me address {
    text-align: left;
    font-size: clamp(1.3rem, 5vw, 2rem);
    font-family: "Roboto", sans-serif;
-
    padding: 3vw;
 }
 
 .footer-buttons {
    display: flex;
-   align-items: center;
-   justify-content: center;
+   justify-content: space-evenly;
 
    margin: 5vw;
-   gap: 5vw;
 }
 
 .footer-buttons img {
@@ -232,20 +218,16 @@ footer h1 {
       position: relative;
    }
 
-   .about-me-caption {
-      text-align: left;
-      font-size: clamp(1.5rem, 5vw, 1.8rem);
-   }
-
    .header-image {
       width: 55vw;
-      height: auto;
       float: left;
 
-      margin: -8vw 1vw -1vw -5vw;
+      /* Makes image appear as overlapping top left corner */
+      transform: translate(-5vw, -5vw);
+      margin: 0 -3vw -3vw 0;
    }
 
-   .header-caption {
+   .header-image-caption {
       position: absolute;
       top: 0;
       left: 0;
@@ -253,20 +235,24 @@ footer h1 {
       font-size: clamp(2.5rem, 6vw, 3rem);
    }
 
-   .header-links img {
-      width: 4vw;
-      margin: 0 1vw 0 1vw;
+   .about-me-caption {
+      text-align: left;
+      font-size: clamp(1.5rem, 5vw, 1.8rem);
+   }
+
+   .about-me-links img {
+      width: 5vw;
    }
 
    .personal-projects {
-      margin-top: 5vh;
+      margin: 5vh auto 10vh auto;
    }
 
    .personal-projects h1 {
       align-self: flex-start;
    }
 
-   .project-card a > img {
+   .project-card a img {
       width: 4vw;
    }
 
@@ -276,10 +262,10 @@ footer h1 {
 
    .contact-me {
       width: 60%;
-      margin: 10vw 5vw 10vw 5vw;
+      margin: 5vw 3vw 5vw 3vw;
    }
 
-   footer h1 {
+   .contact-me h1 {
       font-size: clamp(2rem, 6vw, 2.5rem);
       text-align: left;
 
@@ -291,18 +277,17 @@ footer h1 {
       padding: 0 2vw 2vw 3vw;
    }
 
-   .address,
-   .contact-info {
+   .contact-me address {
       font-size: clamp(1.2rem, 4vw, 1.6rem);
       padding: 1vw 2vw 2vw 3vw;
    }
 
    .footer-buttons {
-      width: auto;
-
       justify-content: flex-start;
+      gap: 3vw;
+
       margin: 0;
-      padding: 2vw 2vw 2vw 3vw;
+      padding: 3vw 0 0 3vw;
    }
 
    .footer-buttons img {
@@ -323,25 +308,20 @@ footer h1 {
    }
 
    header::before {
-      height: 85%;
-   }
-
-   .header-image {
-      width: 40vw;
-      margin: -2vw 1vw 0 -5vw;
-   }
-
-   .header-caption {
-      font-size: clamp(2.5rem, 8vw, 2.8rem);
+      height: 100%;
    }
 
    .about-me {
-      margin-top: 2vw;
+      margin: 0 10vw 0 0;
       padding: 1vw;
-      height: 25vw;
+      height: auto;
+      width: 40vw;
+
+      align-self: flex-end;
    }
+
    .about-me-caption {
-      font-size: clamp(1.4rem, 5vw, 1.6vw);
+      font-size: clamp(1.2rem, 5vw, 1.4vw);
       margin-bottom: 1vw;
    }
 
@@ -349,26 +329,41 @@ footer h1 {
       text-align: left;
    }
 
-   .header-links {
+   .header-image {
+      position: absolute;
+      top: 2.5vw;
+      left: -30vw;
+      width: 35vw;
+   }
+
+   .header-image-caption {
+      font-size: clamp(2.6rem, 8vw, 2.8rem);
+      left: -30vw;
+   }
+
+   .about-me-links {
       display: flex;
       align-self: flex-end;
       justify-content: flex-end;
+
+      gap: 2vw;
    }
 
-   .header-links a {
+   .about-me-links a {
       margin: 0;
    }
 
-   .header-links a img {
-      width: 3vw;
+   .about-me-links img {
+      width: 2.5vw;
    }
 
    .personal-projects {
-      margin: 3vh auto 10vh auto;
+      margin: 10vh auto 10vh auto;
       width: 95%;
    }
 
    .cards-wrapper {
+      margin: 2vh auto 2vh auto;
       gap: 2vw;
       width: 90%;
    }
@@ -376,12 +371,14 @@ footer h1 {
    .card-header h2 {
       font-size: clamp(1.2rem, 5vw, 1.6rem);
    }
+
    .project-card a img {
       width: 2vw;
    }
+
    .project-info p {
       font-size: clamp(1rem, 5vw, 1.3rem);
-      padding: 1.5vw;
+      padding: 1vw;
    }
 
    .project-buttons a {
@@ -389,11 +386,12 @@ footer h1 {
    }
 
    .contact-me {
-      margin: 0;
+      margin: 1vw;
       width: 40%;
    }
 
-   footer h1 {
+   .contact-me h1 {
+      padding: 1vw;
       font-size: clamp(2rem, 6vw, 2.4rem);
    }
 
@@ -402,10 +400,9 @@ footer h1 {
       padding: 0 0 0 3vw;
    }
 
-   .address,
-   .contact-info {
+   .contact-me address {
       font-size: clamp(1.2rem, 4vw, 1.6rem);
-      padding: 2vw 0 0 3vw;
+      padding: 1vw 0 0 3vw;
    }
 
    .footer-buttons {
@@ -413,12 +410,12 @@ footer h1 {
    }
 
    .footer-buttons img {
-      width: 2.2vw;
+      width: 2.5vw;
    }
 
    footer picture {
       width: 60%;
-      margin: 1vw;
+      margin: 0;
    }
 
    .footer-image {
@@ -426,11 +423,3 @@ footer h1 {
       max-height: 90%;
    }
 }
-
-/**
-
-TODO
-
-Styling
-   Button styling/responsiveness
-**/
