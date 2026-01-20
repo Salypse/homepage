@@ -64,10 +64,11 @@ header::before {
    top: -15vw;
 
    text-align: left;
-   font-family: Garamond, sans-serif;
+   font-family: "Garamond", sans-serif;
    font-size: clamp(2.6rem, 7vw, 2.8rem);
    font-weight: 700;
-   color: black;
+   color: white;
+   text-shadow: 2px 2px black;
 }
 
 .about-me-caption {
@@ -125,7 +126,8 @@ header::before {
    transition: transform 0.3s;
 }
 
-.project-buttons a img:hover {
+.project-buttons a img:hover,
+.project-buttons a:focus-visible img {
    transform: scale(1.25);
 }
 
@@ -190,7 +192,8 @@ footer {
    transition: transform 0.4s;
 }
 
-.footer-buttons img:hover {
+.footer-buttons img:hover,
+.footer-buttons a:focus-visible img {
    transform: scale(1.3);
 }
 
